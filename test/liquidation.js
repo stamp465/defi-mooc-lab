@@ -2,9 +2,11 @@ const { expect } = require("chai");
 const { network, ethers } = require("hardhat");
 const { BigNumber, utils }  = require("ethers");
 const { writeFile } = require('fs');
+require('dotenv').config()
 
 describe("Liquidation", function () {
   it("test", async function () {
+    // console.log(process.env.ALCHE_API)
     await network.provider.request({
         method: "hardhat_reset",
         params: [{
