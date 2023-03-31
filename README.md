@@ -1,3 +1,28 @@
+# Run with npm
+
+1. .env
+
+```
+ALCHE_API=<YOUR ALCHE_API HTTP KEY>
+```
+
+2. run test
+```
+npm install
+
+npm test
+```
+
+# Run with docker (Window)
+
+```
+docker build -t defi-mooc-lab2 .
+
+docker run -e ALCHE_API="YOUR ALCHE_API HTTP KEY" -v "${PWD}/contracts:/lab2/contracts" -v "${PWD}/test:/lab2/test" -it defi-mooc-lab2 npm test
+```
+
+## Old Readme
+
 # Hands-on Exercise: Flash Loan based Liquidation
 
 ## Exercise

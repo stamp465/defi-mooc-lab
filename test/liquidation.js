@@ -4,7 +4,7 @@ const { BigNumber, utils }  = require("ethers");
 const { writeFile } = require('fs');
 require('dotenv').config()
 
-describe("Liquidation", function () {
+describe("Liquidation TEST", function () {
   it("test", async function () {
     // console.log(process.env.ALCHE_API)
     await network.provider.request({
