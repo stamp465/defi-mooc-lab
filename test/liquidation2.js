@@ -4,8 +4,8 @@ const { BigNumber, utils }  = require("ethers");
 const { writeFile } = require('fs');
 require('dotenv').config()
 
-describe("Liquidation question 2", function () {
-  it("2000 USDT", async function (input = "2000") {
+describe("Liquidation test for question 2", function () {
+  it("TEST Liquidation 2000 USDT", async function (input = "2000") {
     // console.log(process.env.ALCHE_API)
     await network.provider.request({
       method: "hardhat_reset",
@@ -58,7 +58,7 @@ describe("Liquidation question 2", function () {
       console.log(err)
     }
   });
-  it("5000 USDT", async function (input = "5000") {
+  it("TEST Liquidation 5000 USDT", async function (input = "5000") {
     // console.log(process.env.ALCHE_API)
     await network.provider.request({
       method: "hardhat_reset",
@@ -111,7 +111,7 @@ describe("Liquidation question 2", function () {
       console.log(err)
     }
   });
-  it("10000 USDT", async function (input = "10000") {
+  it("TEST Liquidation 10000 USDT", async function (input = "10000") {
     // console.log(process.env.ALCHE_API)
     await network.provider.request({
       method: "hardhat_reset",
