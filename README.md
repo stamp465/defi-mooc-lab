@@ -1,3 +1,37 @@
+# ปฏิบัติการนอกห้องเรียน 2 วิชา CeFi vs DeFi 
+
+by witnapat champaruang 6310500350
+
+## Branch
+- **main** for all liquidation
+- **question2** for liquidation of question2
+- **question3** for liquidation of question3
+
+## Run with npm
+
+1. make .env at root
+
+```
+ALCHE_API=<YOUR ALCHE_API HTTP KEY>
+```
+
+2. run test
+```
+npm install
+
+npm test
+```
+
+## Run with docker (Window)
+
+```
+docker build -t defi-mooc-lab2 .
+
+docker run -e ALCHE_API="YOUR ALCHE_API HTTP KEY" -v "${PWD}/contracts:/lab2/contracts" -v "${PWD}/test:/lab2/test" -it defi-mooc-lab2 npm test
+```
+
+## Old Readme
+
 # Hands-on Exercise: Flash Loan based Liquidation
 
 ## Exercise
