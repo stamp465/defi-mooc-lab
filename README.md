@@ -1,6 +1,15 @@
-# Run with npm
+# ปฏิบัติการนอกห้องเรียน 2 วิชา CeFi vs DeFi 
 
-1. .env
+by witnapat champaruang 6310500350
+
+## Branch
+- **main** for all liquidation
+- **question2** for liquidation of question2
+- **question3** for liquidation of question3
+
+## Run with npm
+
+1. make .env at root
 
 ```
 ALCHE_API=<YOUR ALCHE_API HTTP KEY>
@@ -13,7 +22,7 @@ npm install
 npm test
 ```
 
-# Run with docker (Window)
+## Run with docker (Window)
 
 ```
 docker build -t defi-mooc-lab2 .
